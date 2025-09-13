@@ -1,0 +1,73 @@
+Day 4 – DevOps Learning Journey
+📖 Project Overview
+
+This project demonstrates how to use Vagrant provisioning to automate the setup of a web server.
+Instead of manually installing packages and configuring Apache, everything is done automatically when we run:
+
+vagrant up
+
+
+The provisioning script installs Apache, downloads a template website, and serves it on the VM.
+
+⚙️ Tech Stack
+
+Vagrant – For VM lifecycle management
+
+VirtualBox – VM provider
+
+CentOS Stream 9 – Guest OS
+
+Apache HTTP Server – Web server
+
+Shell Script – Provisioning automation
+
+📂 Project Structure
+📦 devops-day4-vagrant-provision
+ ┣ 📜 Vagrantfile
+ ┣ 📜 README.md
+ 
+
+▶️ Setup & Usage
+
+Clone this repository
+
+git clone https://github.com/<your-username>/devops-day4-vagrant-provision.git
+cd devops-day4-vagrant-provision
+
+
+Start the VM
+
+vagrant up
+
+
+Access the website
+
+If using private network: open http://192.168.20.30
+
+If using forwarded port: open http://localhost:8080
+
+Destroy VM when not needed
+
+vagrant destroy -f
+
+🎥 Demo Video
+
+👉 Watch on LinkedIn
+
+📝 Key Learnings
+
+Provisioning automates repetitive setup tasks
+
+One vagrant up command = full environment ready
+
+Saves time and avoids configuration drift
+
+💡 Future Improvements
+
+Add database provisioning (MySQL/Postgres)
+
+Deploy multi-tier apps (frontend + backend)
+
+Explore Ansible with Vagrant
+
+🔥 Day 4 complete – Automation with Vagrant!
